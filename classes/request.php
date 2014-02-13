@@ -15,7 +15,9 @@
 
 		private $error = null;
 
-		private $stats = null;
+		private $raw_stats = null;
+
+		private $stats = array();
 
 		private $player = null;
 
@@ -37,7 +39,12 @@
 				$this->error = USER_NOT_FOUND;
 				return false;
 			}
-			$this->stats = json_decode($json, true);	
+			$this->raw_stats = json_decode($json, true);
+
+			for($i = 0, $length = count($this->raw_stats['playerstats']['stats']); $i < $length; $i++){
+				$this->stats[$this->raw_stats['playerstats']['stats'][$i]['name']] = $this->raw_stats['playerstats']['stats'][$i]['value'];
+			}
+
 			return true;
 		}
 
@@ -62,7 +69,7 @@
 		* 
 		*/
 		public function getStat($x){
-			return $this->stats['playerstats']['stats'][$x]['value'];
+			return $this->stats[$x];
 		}
 
 		/**
