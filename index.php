@@ -1,46 +1,40 @@
-<!DOCTYPE HTML>
-<?php
-	//require_once("request.php");
-?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
 
+    <link href="views/cover.css" rel="stylesheet">
 
+    <!-- Bootstrap -->
+    <!-- Bootstrap CDN -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 
-
-<html>
-<header>
-	<style>
-	*{margin:0; padding:0;}
-	html, body {margin: 0;
-		padding:0;
-		width: 100%;
-		height: 100%;
-		background-color:#193441;
-	}
-	#steam_id{margin:0;
-		padding:0;
-		position:absolute;
-		width:300px;
-		height:30px;
-		top:50%;
-		left:50%;
-		margin-left:-150px;
-		margin-top:-15px;
-		background-color:#91AA9D;
-		color:#193441;
-		font-weight:bold;
-		font-family:"Lucida Console", Times, serif;
-	}
-	::-webkit-input-placeholder{color:#FCFFF5;}
-	</style>
-</header>
-</body>
-	<div id="form_container">
-		<form method="post" name="userSearch">
-			<input id="steam_id" type="text" name="steam_id" placeholder="64bit Steam ID">
-			<input id="submit" type="submit" name="submit" style="visibility:hidden;">
-		</form>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container" id="form_container">
+  		<form method="post" name="userSearch">
+  			<div class="form-group">
+  				<input id="steam_id" type="text" name="steam_id" placeholder="64bit Steam ID">
+          <input id="submit" type="submit" name="submit" >
+  			</div>
+  		</form>
 	</div>
-</body>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Bootstrap CDN -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  </body>
 </html>
 <?php
 if(isset($_POST["steam_id"])){

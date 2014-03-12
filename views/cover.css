@@ -1,0 +1,38 @@
+
+*{ padding:0;
+	margin:0;
+}
+html, body{
+	height: 100%;
+}
+body{
+	width:100%;
+}
+#form_container{
+	height: 100%;
+	width: 100%;
+
+	background-color:#193441;
+}
+form{
+	display:block;
+	height:100%;
+	width:100%;
+}
+form > div{
+	height:50%;
+	width:50%;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right:0;
+}
+input{
+	display:block;
+	width:100%;
+}
+
+@media (max-width: 768px){
+	input{
+		width:100vh;
+	}
+}
