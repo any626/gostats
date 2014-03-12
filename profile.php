@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>Counter Strike: Global Offensive Stats</title>
 
     <!-- Bootstrap -->
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
@@ -25,7 +25,7 @@
   <body>
     <div class="container">
     	<div class="header">
-    		<h1>Counter-Strike:Global Offensive</h1>
+    		<h1>Counter Strike: Global Offensive Stats</h1>
     		<?php require('/forms/_userForm.php'); ?>
     	</div>
     	<div class="jumbotron">
@@ -65,6 +65,10 @@
 							<li class="list-group-item">
 								<span class="badge"><?php echo $user->getStat('last_match_damage');?></span>
 								Damage
+							</li>
+							<li class="list-group-item">
+								<span class="badge"><?php echo $user->getStat('last_match_mvps');?></span>
+								MVPs
 							</li>
 						</ul>
     				</div>

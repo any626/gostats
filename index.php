@@ -21,12 +21,7 @@
   </head>
   <body>
     <div class="container" id="form_container">
-  		<form method="post" name="userSearch">
-  			<div class="form-group">
-  				<input id="steam_id" type="text" name="steam_id" placeholder="64bit Steam ID">
-          <input id="submit" type="submit" name="submit" >
-  			</div>
-  		</form>
+  		<?php require_once('forms/_userForm.php'); ?>
 	</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
