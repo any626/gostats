@@ -1,6 +1,6 @@
 <?php
 	
-	require_once($_SERVER['DOCUMENT_ROOT'] . "/gostats/constants.php");
+	require_once($_SERVER['DOCUMENT_ROOT'] . "/GOStatsBoot/gostats//constants.php");
 	
 	/**
 	* Used to make a request to the api and retrieve specific data
