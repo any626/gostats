@@ -1,0 +1,10 @@
+html *{
+	font-family: "Lucida Console", Times, serif;
+}
+form,h1,h2{
+	text-align: center;
+}
+img{
+	margin-left: auto;
+	margin-right: auto;
+}
